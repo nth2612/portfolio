@@ -6,3 +6,25 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Roboto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+ul{
+  list-style: none;
+}
+#root{
+  
+}
