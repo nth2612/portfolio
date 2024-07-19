@@ -1,9 +1,12 @@
 import MenuIcon from '@mui/icons-material/Menu'
-
-const ButtonMobile = () => {
+import ClearIcon from '@mui/icons-material/Clear'
+const ButtonMobile = ({ setIsOpen, isOpen }) => {
   return (
-    <div className='inline-flex lg:hidden'>
-      <MenuIcon fontSize='large' />
+    <div className='inline-flex md:hidden'>
+      { isOpen
+        ? <ClearIcon fontSize='large' sx={{ cursor: 'pointer' }} onClick={() => setIsOpen(false)} />
+        : <MenuIcon fontSize='large' sx={{ cursor: 'pointer' }} onClick={() => setIsOpen(true)} />
+      }
     </div>
   )
 }

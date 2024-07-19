@@ -13,6 +13,9 @@ export default {
         "primary" : "#6cc2c5",
         "secondary" : "#e06e8e",
         "normal" : "#172b4d"
+      },
+      dropShadow: {
+        "primary" : "-10px 5px 10px #6cc2c5"
       }
     }
   },
