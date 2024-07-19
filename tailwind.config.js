@@ -8,6 +8,11 @@ export default {
     extend: {
       backgroundColor: {
         "rgba" : "rgba(0,0,0,0.1)"
+      },
+      colors: {
+        "primary" : "#6cc2c5",
+        "secondary" : "#e06e8e",
+        "normal" : "#172b4d"
       }
     }
   },

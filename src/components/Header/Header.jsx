@@ -6,7 +6,7 @@ import ThemeMode from "./ThemeMode/ThemeMode"
 const Header = () => {
   return (
     <header>
-      <div className="container flex justify-between p-2">
+      <div className="container flex justify-between p-2 items-center">
         <ButtonMobile/>
         <Logo/>
         <MenuTop/>

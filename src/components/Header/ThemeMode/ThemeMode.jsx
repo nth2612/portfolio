@@ -8,10 +8,10 @@ const ThemeMode = () => {
     setDarkMode(prev => !prev)
   }
   return (
-    <div className='w-8 h-8 hover:bg-rgba p-1 rounded-full' >
+    <div className='w-10 h-10 hover:bg-rgba p-2 rounded-full' >
       { darkMode
-        ? <LightModeOutlinedIcon onClick={changeMode} sx={{ cursor: 'pointer', mt: '-2px' }}/>
-        : <DarkModeOutlinedIcon onClick={changeMode} sx={{ cursor: 'pointer', mt: '-2px' }}/>
+        ? <DarkModeOutlinedIcon onClick={changeMode} sx={{ cursor: 'pointer', mt: '-2px' }}/>
+        : <LightModeOutlinedIcon onClick={changeMode} sx={{ cursor: 'pointer', mt: '-2px' }}/>
       }
     </div>
   )
