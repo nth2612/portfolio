@@ -29,7 +29,7 @@ const Overview = () => {
           <span className={`text-7xl select-none font-black ${showMe && !showGif ? 'text-primary dark:text-primary-dark' : 'text-transparent'}`} >Nguyen Tuan Hai</span>
           <p className={`text-4xl select-none mb-4 mt-6 ${showMe && !showGif ? 'text-normal' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
           {!showMe && <Button text='Show who this guy is' onClick={handleZaWarudo} />}
-          {(showMe && showGif) && <div className="w-16 h-10 bg-white"></div>}
+          {(showMe && showGif) && <div className="w-16 h-10 bg-transparent"></div>}
           {(showMe && !showGif) && <a href={myResume} download><Button text='Download resume' /></a>}
           <div className="flex justify-center gap-4 mt-6">
             <div className="w-10 h-10 rounded-full shadow-circlebtn overflow-hidden group bg-[#3b5997] hover:bg-primary">
