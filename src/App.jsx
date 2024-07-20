@@ -10,8 +10,9 @@ function App() {
     if (!localStorage.getItem("theme")) {
       localStorage.setItem("theme", "light")
     }
-    else if ( localStorage.getItem("theme") === "dark") {
+    else if (localStorage.getItem("theme") === "dark") {
       document.documentElement.classList.add("dark")
+      document.body.style.backgroundColor = "#101204"
     }
   }, [])
   return (

@@ -25,15 +25,12 @@ const Overview = () => {
     <div className="container px-2 block lg:flex justify-between items-center !mt-10">
       <div className="px-2 relative flex-1 self-stretch flex justify-center items-center">
         <div className="text-center">
-          <p className="font-extrabold text-[50px] text-normal dark:text-red-400" >Hi there, I&apos;m</p>
+          <p className="font-extrabold text-[50px] dark:text-normal-dark" >Hi there, I&apos;m</p>
           <span className={`text-7xl select-none font-black ${showMe && !showGif ? 'text-primary dark:text-primary-dark' : 'text-transparent'}`} >Nguyen Tuan Hai</span>
           <p className={`text-4xl select-none mb-4 mt-6 ${showMe && !showGif ? 'text-normal' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
           {!showMe && <Button text='Show who this guy is' onClick={handleZaWarudo} />}
-          {(showMe && !showGif)
-            ? <a href={myResume} download>
-              <Button text='Download resume' />
-            </a>
-            : <div className="w-16 h-10 bg-white"></div>}
+          {(showMe && showGif) && <div className="w-16 h-10 bg-white"></div>}
+          {(showMe && !showGif) && <a href={myResume} download><Button text='Download resume' /></a>}
           <div className="flex justify-center gap-4 mt-6">
             <div className="w-10 h-10 rounded-full shadow-circlebtn overflow-hidden group bg-[#3b5997] hover:bg-primary">
               <a href="https://www.facebook.com/nthresol" target="_blank" rel="noreferrer" className="block h-full p-[10px] text-white">
