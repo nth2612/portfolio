@@ -29,7 +29,7 @@ const Overview = () => {
           <span className={`text-7xl select-none font-black ${showMe && !showGif ? 'text-primary dark:text-primary-dark' : 'text-transparent'}`} >Nguyen Tuan Hai</span>
           <p className={`text-4xl select-none mb-4 mt-6 ${showMe && !showGif ? 'text-normal' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
           {!showMe && <Button text='Show who this guy is' onClick={handleZaWarudo} />}
-          {showMe &&
+          {(showMe && !showGif) &&
           <a href={myResume} download>
             <Button text='Download resume' />
           </a>}
