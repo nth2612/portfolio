@@ -10,8 +10,8 @@ const Overview = () => {
   const [showMe, setShowMe] = useState(false)
   const [showGif, setShowGif] = useState(false)
   const handleZaWarudo = () => {
-    setShowMe(true)
     setShowGif(true)
+    setShowMe(true)
   }
   useEffect(() => {
     if (showMe) {
@@ -26,8 +26,8 @@ const Overview = () => {
       <div className="px-2 relative flex-1 self-stretch flex justify-center items-center">
         <div className="text-center">
           <p className="font-extrabold text-[50px] text-normal dark:text-red-400" >Hi there, I&apos;m</p>
-          <span className={`text-7xl select-none font-black ${showMe ? 'text-primary' : 'text-transparent'}`} >Nguyen Tuan Hai</span>
-          <p className={`text-4xl select-none mb-4 mt-6 ${showMe ? 'text-normal' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
+          <span className={`text-7xl select-none font-black ${showMe && !showGif ? 'text-primary dark:text-primary-dark' : 'text-transparent'}`} >Nguyen Tuan Hai</span>
+          <p className={`text-4xl select-none mb-4 mt-6 ${showMe && !showGif ? 'text-normal' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
           {!showMe && <Button text='Show who this guy is' onClick={handleZaWarudo} />}
           {showMe &&
           <a href={myResume} download>

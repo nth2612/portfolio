@@ -13,8 +13,9 @@ export default {
       colors: {
         "primary" : "#6cc2c5",
         "primary-dark" : "#e06e8e",
-        "secondary" : "#e06e8e",
+        "icon-dark" : "#8C9BAB",
         "normal" : "#172b4d",
+        "normal-dark" : "#9fadbc",
         "bg-dark" : "#101204"
       },
       dropShadow: {

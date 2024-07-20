@@ -8,11 +8,13 @@ const ThemeMode = () => {
     if (mode === "light") {
       document.documentElement.classList.add("dark")
       localStorage.setItem("theme", "dark")
+      document.body.style.backgroundColor = "#101204"
       setMode("dark")
     }
     else if (mode === "dark") {
       document.documentElement.classList.remove("dark")
       localStorage.setItem("theme", "light")
+      document.body.style.backgroundColor = "#ffffff"
       setMode("light")
     }
   }
