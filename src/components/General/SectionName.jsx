@@ -1,6 +1,6 @@
 const SectionName = ({ text }) => {
   return (
-    <div className="myguy w-fit mx-auto text-3xl relative after:bg-primary dark:after:bg-primary-dark dark:text-normal-dark mt-10">
+    <div className="section-name w-fit mx-auto text-3xl relative after:bg-primary dark:after:bg-primary-dark dark:text-normal-dark my-10">
       {text}
     </div>
   )
