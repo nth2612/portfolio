@@ -3,9 +3,11 @@ import Header from './components/Header/Header'
 import NavMobile from './components/Header/NavMobile/NavMobile'
 import { useLayoutEffect, useState } from 'react'
 import Overview from './components/Overview/Overview'
+import AboutMe from './components/AboutMe/AboutMe'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
+  const [mode, setMode] = useState(() => localStorage.getItem("theme"))
   useLayoutEffect(() => {
     if (!localStorage.getItem("theme")) {
       localStorage.setItem("theme", "light")
@@ -17,9 +19,10 @@ function App() {
   }, [])
   return (
     <>
-      <NavMobile isOpen={isOpen} />
-      <Header setIsOpen={setIsOpen} isOpen={isOpen} />
+      <NavMobile isOpen={isOpen} mode={mode} />
+      <Header setIsOpen={setIsOpen} isOpen={isOpen} mode={mode} setMode={setMode} />
       <Overview/>
+      <AboutMe/>
       {/* <video src={chotoiditheo} controls ></video> */}
       {/* <MyProjects/> */}
     </>

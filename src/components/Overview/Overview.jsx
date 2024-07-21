@@ -5,19 +5,28 @@ import myResume from '~/assets/Nguyen_Tuan_Hai_Resume_Intern_Front-end.pdf'
 import Button from "../General/Button"
 import GitHubIcon from '@mui/icons-material/GitHub'
 import YouTubeIcon from '@mui/icons-material/YouTube'
+import { useRef } from "react"
+import sound from '~/assets/theworld.mp3'
 
 const Overview = () => {
+  const audioRef = useRef(null)
+  const playSound = () => {
+    if (audioRef.current) {
+      audioRef.current.play()
+    }
+  }
   const [showMe, setShowMe] = useState(false)
   const [showGif, setShowGif] = useState(false)
   const handleZaWarudo = () => {
     setShowGif(true)
+    playSound()
     setShowMe(true)
   }
   useEffect(() => {
     if (showMe) {
       const timeId = setTimeout(() => {
         setShowGif(false)
-      }, 2300)
+      }, 2500)
       return () => clearTimeout(timeId)
     }
   }, [showMe])
@@ -27,7 +36,8 @@ const Overview = () => {
         <div className="text-center">
           <p className="font-extrabold text-[50px] dark:text-normal-dark" >Hi there, I&apos;m</p>
           <span className={`text-7xl select-none font-black ${showMe && !showGif ? 'text-primary dark:text-primary-dark' : 'text-transparent'}`} >Nguyen Tuan Hai</span>
-          <p className={`text-4xl select-none mb-4 mt-6 ${showMe && !showGif ? 'text-normal' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
+          <p className={`text-4xl select-none mb-4 mt-6 ${showMe && !showGif ? 'text-normal dark:text-normal-dark' : 'text-transparent'}`} >An Intern Web Frontend Developer &lt;/&gt;</p>
+          <audio ref={audioRef} src={sound} preload="auto"></audio>
           {!showMe && <Button text='Show who this guy is' onClick={handleZaWarudo} />}
           {(showMe && showGif) && <div className="w-16 h-10 bg-transparent"></div>}
           {(showMe && !showGif) && <a href={myResume} download><Button text='Download resume' /></a>}

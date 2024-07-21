@@ -1,9 +1,8 @@
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
-import { useState } from 'react'
+// import { useState } from 'react'
 
-const ThemeMode = () => {
-  const [mode, setMode] = useState(() => localStorage.getItem("theme"))
+const ThemeMode = ({ mode, setMode }) => {
   const handleMode = () => {
     if (mode === "light") {
       document.documentElement.classList.add("dark")
@@ -19,7 +18,7 @@ const ThemeMode = () => {
     }
   }
   return (
-    <div className='w-10 h-10 hover:bg-rgba p-2 rounded-full border dark:border-[#6b7280] shadow-circlebtn dark:shadow-circlebtn-dark' >
+    <div className='w-10 h-10 hover:bg-rgba dark:hover:bg-rgba-dark p-2 rounded-full border dark:border-[#6b7280] shadow-circlebtn dark:shadow-circlebtn-dark' >
       { mode === "dark"
         ? <DarkModeOutlinedIcon onClick={handleMode} sx={{ cursor: 'pointer', mt: '-5px', ml: '-1px', color: 'white' }}/>
         : <LightModeOutlinedIcon onClick={handleMode} sx={{ cursor: 'pointer', mt: '-4px', ml: '-1px' }}/>

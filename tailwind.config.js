@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        "rgba" : "rgba(0,0,0,0.1)"
+        "rgba" : "rgba(0,0,0,0.1)",
+        "rgba-dark" : "rgba(255,255,255,0.1)"
       },
       colors: {
         "primary" : "#6cc2c5",
@@ -19,7 +20,8 @@ export default {
         "bg-dark" : "#101204"
       },
       dropShadow: {
-        "primary" : "-10px 5px 10px #6cc2c5"
+        "primary" : "-10px 5px 10px #6cc2c5",
+        "primary-dark" : "10px 5px 10px #e06e8e"
       },
       boxShadow: {
         "circlebtn" : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
