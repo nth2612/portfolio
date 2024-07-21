@@ -8,7 +8,7 @@ const NavMobile = ({ isOpen, mode }) => {
       <img src={mode === "light" ? sneeze2 : sneeze1} alt="" className="drop-shadow-primary dark:drop-shadow-primary-dark mx-auto mb-5" />
       <ul>
         <li className='border-b border-gray-500'>
-          <a href="/" className="block py-2 px-3 text-center text-white hover:text-primary">ABOUT</a>
+          <a href="#about" className="block py-2 px-3 text-center text-white hover:text-primary">ABOUT</a>
         </li>
         <li className='border-b border-gray-500'>
           <a href="#skills" className="block py-2 px-3 text-center text-white hover:text-primary">SKILLS</a>
