@@ -7,6 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import YouTubeIcon from '@mui/icons-material/YouTube'
 import { useRef } from "react"
 import sound from '~/assets/theworld.mp3'
+import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined'
 
 const Overview = () => {
   const audioRef = useRef(null)
@@ -46,7 +47,7 @@ const Overview = () => {
           {(showMe && showGif) && <div className="w-16 h-[104px] bg-transparent"></div>}
           {(showMe && !showGif) &&
           <>
-            <a href={myResume} download><Button text='Download resume' /></a>
+            <a href={myResume} download><Button text='Download resume' icon={<FileDownloadOutlinedIcon sx={{ mt: "-2px", mr: "4px" }} />} /></a>
             <div className="flex justify-center gap-4 mt-6">
               <div className="w-10 h-10 rounded-full shadow-circlebtn overflow-hidden group bg-[#3b5997] hover:bg-primary dark:hover:bg-primary-dark">
                 <a href="https://www.facebook.com/nthresol" target="_blank" rel="noreferrer" className="block h-full p-[10px] text-white">

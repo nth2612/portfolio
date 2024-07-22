@@ -1,6 +1,6 @@
 import SectionName from "../General/SectionName"
 import Skill from "./Skill/Skill"
-import htmllogo from '~/assets/html-logo.png'
+import htmllogo from '~/assets/html-removebg-preview.png'
 import csslogo from '~/assets/css-logo.png'
 import javascriptlogo from '~/assets/js-removebg-preview.png'
 import muilogo from '~/assets/mui-logo.png'
@@ -55,7 +55,7 @@ const listSkills = [
 const Skills = () => {
   return (
     <div id="skills" className="container pb-10 px-2">
-      <SectionName text="My skills" />
+      <SectionName text="Skills" />
       <div className="grid-cols-2 gap-x-0 min-[420px]:gap-x-5 min-[576px]:grid-cols-3 md:grid-cols-4 min-[900px]:grid-cols-5 min-[1080px]:grid-cols-6 grid gap-y-5">
         {listSkills.map(skill => (
           <div key={skill.id} className="flex justify-center">

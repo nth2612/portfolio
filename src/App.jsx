@@ -31,7 +31,7 @@ function App() {
       <Overview/>
       <AboutMe/>
       <Skills/>
-      {/* <MyProjects/> */}
+      <MyProjects/>
     </>
   )
 }

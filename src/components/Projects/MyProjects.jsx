@@ -1,7 +1,10 @@
+import SectionName from "../General/SectionName"
+
 const MyProjects = () => {
   return (
-    <div className='max-w-7xl h-36 bg-slate-500'>
-      <h2>Các dự án đã là</h2>
+    <div id="projects" className="container px-2">
+      <SectionName text="Projects" />
+      <h2 className="text-normal dark:text-normal-dark">Here are a few of my projects</h2>
     </div>
   )
 }
