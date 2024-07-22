@@ -4,9 +4,16 @@ import NavMobile from './components/Header/NavMobile/NavMobile'
 import { useLayoutEffect, useState } from 'react'
 import Overview from './components/Overview/Overview'
 import AboutMe from './components/AboutMe/AboutMe'
+import Skills from './components/Skills/Skills'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
+  if (isOpen) {
+    document.body.style.overflow = "hidden"
+  }
+  else {
+    document.body.style.overflow = "auto"
+  }
   const [mode, setMode] = useState(() => localStorage.getItem("theme"))
   useLayoutEffect(() => {
     if (!localStorage.getItem("theme")) {
@@ -23,7 +30,7 @@ function App() {
       <Header setIsOpen={setIsOpen} isOpen={isOpen} mode={mode} setMode={setMode} />
       <Overview/>
       <AboutMe/>
-      {/* <video src={chotoiditheo} controls ></video> */}
+      <Skills/>
       {/* <MyProjects/> */}
     </>
   )
