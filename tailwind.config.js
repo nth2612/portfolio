@@ -28,7 +28,8 @@ export default {
       },
       boxShadow: {
         "circlebtn" : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
-        "circlebtn-dark" : "rgba(255, 255, 255, 0.4) 0px 3px 8px"
+        "circlebtn-dark" : "rgba(255, 255, 255, 0.4) 0px 3px 8px",
+        "project" : "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px"
       }
     }
   },
