@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage : {
+        "linear" : "linear-gradient(45deg, #6cc2c5, #e06e8e)"
+      },
       backgroundColor: {
         "rgba" : "rgba(0,0,0,0.1)",
         "rgba-dark" : "rgba(255,255,255,0.1)"
