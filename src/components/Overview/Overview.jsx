@@ -32,7 +32,7 @@ const Overview = () => {
     }
   }, [showMe])
   return (
-    <div className="container px-2 block lg:flex justify-between items-center !mt-10">
+    <div className="container px-2 block lg:flex justify-between items-center !mt-24">
       <div className="px-2 relative flex-1 self-stretch flex justify-center items-center">
         <div className="text-center">
           <p className="font-extrabold text-[50px] dark:text-normal-dark" >Hi there, I&apos;m</p>
@@ -74,7 +74,7 @@ const Overview = () => {
         </div>
         {showGif &&
         <div className="absolute inset-0">
-          <img src={zawarudo} alt="" className="w-full h-full" />
+          <img loading="eager" src={zawarudo} alt="" className="w-full h-full" />
         </div>
         }
       </div>

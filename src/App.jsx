@@ -26,7 +26,7 @@ function App() {
   }, [])
   return (
     <>
-      <NavMobile isOpen={isOpen} mode={mode} />
+      <NavMobile isOpen={isOpen} mode={mode} setIsOpen={setIsOpen} />
       <Header setIsOpen={setIsOpen} isOpen={isOpen} mode={mode} setMode={setMode} />
       <Overview/>
       <AboutMe/>
