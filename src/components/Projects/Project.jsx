@@ -5,7 +5,7 @@ const Project = ({ index, name, description, imageSrc, linkCode, linkWeb }) => {
       <div className='max-w-md aspect-video rounded-lg overflow-hidden max-[767px]:rounded-b-none'>
         <img loading='lazy' src={imageSrc} alt="" />
       </div>
-      <div className='dark:text-normal-dark px-4 grow flex flex-col gap-2'>
+      <div className='dark:text-normal-dark px-4 grow flex flex-col gap-2 max-[767px]:self-start'>
         <h2 className='font-medium text-xl mt-2 md:mt-0'>{name}</h2>
         <p>{description}</p>
         <p>

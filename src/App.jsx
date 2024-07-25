@@ -5,6 +5,7 @@ import { useLayoutEffect, useState } from 'react'
 import Overview from './components/Overview/Overview'
 import AboutMe from './components/AboutMe/AboutMe'
 import Skills from './components/Skills/Skills'
+import ContactMe from './components/Contact/ContactMe'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,6 +33,7 @@ function App() {
       <AboutMe/>
       <Skills/>
       <MyProjects/>
+      <ContactMe/>
     </>
   )
 }
