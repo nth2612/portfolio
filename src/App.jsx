@@ -6,6 +6,7 @@ import Overview from './components/Overview/Overview'
 import AboutMe from './components/AboutMe/AboutMe'
 import Skills from './components/Skills/Skills'
 import ContactMe from './components/Contact/ContactMe'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,7 @@ function App() {
   else {
     document.body.style.overflow = "auto"
   }
-  const [mode, setMode] = useState(() => localStorage.getItem("theme"))
+  const [mode, setMode] = useState(() => localStorage.getItem("theme") || "light")
   useLayoutEffect(() => {
     if (!localStorage.getItem("theme")) {
       localStorage.setItem("theme", "light")
@@ -34,6 +35,7 @@ function App() {
       <Skills/>
       <MyProjects/>
       <ContactMe/>
+      <Footer/>
     </>
   )
 }

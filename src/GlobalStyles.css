@@ -28,6 +28,12 @@ img{
 ul{
   list-style: none;
 }
+input, textarea{
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
 #root{
   
 }
