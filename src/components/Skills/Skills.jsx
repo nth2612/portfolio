@@ -2,7 +2,7 @@ import SectionName from "../General/SectionName"
 import Skill from "./Skill/Skill"
 import htmllogo from '~/assets/html-removebg-preview.png'
 import csslogo from '~/assets/css-logo.png'
-import javascriptlogo from '~/assets/js-removebg-preview.png'
+import javascriptlogo from '~/assets/js-removebg-preview-removebg-preview.png'
 import muilogo from '~/assets/mui-logo.png'
 import gitlogo from '~/assets/Git-logo.png'
 import typescriptlogo from '~/assets/typescript-logo.png'
