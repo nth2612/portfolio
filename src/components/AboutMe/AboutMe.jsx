@@ -5,9 +5,9 @@ import MapIcon from '@mui/icons-material/Map'
 import AbcIcon from '@mui/icons-material/Abc'
 
 const aboutMe = 'Hello, I am a student passionate about programming with the desire to become a Front-end Developer. I am currently a fourth-year student, majoring in Software Technology at Electric Power University. I enjoy creating web interfaces that are beautiful, smooth, and interact well with users.'
-const AboutMe = () => {
+const AboutMe = ({ useRef }) => {
   return (
-    <div id="about" className="container" >
+    <div ref={useRef} id="about" className="container" >
       <SectionName text='About me' />
       <div className="px-2 block lg:flex lg:flex-row-reverse justify-center bg-[#FDF6ED] dark:bg-[#1a1a1a] py-5 rounded-lg">
         <div className="max-w-screen-sm lg:max-w-none px-4 pb-10 lg:p-0 mx-auto lg:pr-2">

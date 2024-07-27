@@ -63,12 +63,12 @@ const listProjects = [
 
 const newList = listProjects.reverse()
 
-const MyProjects = () => {
+const MyProjects = ({ useRef }) => {
   useEffect(() => {
     Aos.init({ once: true, duration: 900 })
   }, [])
   return (
-    <div id="projects" className="container px-2 !mb-[200px]">
+    <div ref={useRef} id="projects" className="container px-2 !mb-[200px]">
       <SectionName text="Projects" />
       <h2 className="text-normal dark:text-normal-dark font-medium text-2xl mb-4 max-[767px]:text-center">Here are a few of my projects:</h2>
       {newList.map(prj => <Project key={prj.id} name={prj.namePrj} index={prj.id} description={prj.description} imageSrc={prj.imgSrc} linkCode={prj.linkGit} linkWeb={prj.linkWeb} />)}

@@ -4,7 +4,7 @@ import Logo from "./Logo/Logo"
 import MenuTop from "./MenuTop/MenuTop"
 import ThemeMode from "./ThemeMode/ThemeMode"
 
-const Header = ({ setIsOpen, isOpen, mode, setMode }) => {
+const Header = ({ setIsOpen, isOpen, mode, setMode, skillRef, aboutRef, contactRef, projectRef }) => {
   const [hasShadow, setHasShadow] = useState(false)
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +23,7 @@ const Header = ({ setIsOpen, isOpen, mode, setMode }) => {
       <div className="container flex justify-between p-2 items-center">
         <ButtonMobile setIsOpen={setIsOpen} isOpen={isOpen}/>
         <Logo/>
-        <MenuTop/>
+        <MenuTop skillRef={skillRef} aboutRef={aboutRef} contactRef={contactRef} projectRef={projectRef}/>
         <ThemeMode mode={mode} setMode={setMode}/>
       </div>
     </header>

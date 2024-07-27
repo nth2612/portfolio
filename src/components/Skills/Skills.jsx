@@ -52,9 +52,9 @@ const listSkills = [
   }
 ]
 
-const Skills = () => {
+const Skills = ({ useRef }) => {
   return (
-    <div id="skills" className="container pb-10 px-2">
+    <div ref={useRef} id="skills" className="container pb-10 px-2">
       <SectionName text="Skills" />
       <div className="grid-cols-2 gap-x-0 min-[420px]:gap-x-5 min-[576px]:grid-cols-3 md:grid-cols-4 min-[900px]:grid-cols-5 min-[1080px]:grid-cols-6 grid gap-y-5">
         {listSkills.map(skill => (
