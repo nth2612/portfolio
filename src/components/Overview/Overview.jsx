@@ -41,7 +41,7 @@ const Overview = () => {
           <audio ref={audioRef} src={sound} preload="auto"></audio>
           {!showMe &&
           <>
-            <Button text='Show who this guy is' onClick={handleZaWarudo} />
+            <Button text='Press me' onClick={handleZaWarudo} />
             <div className="w-16 h-16 bg-transparent"></div>
           </>}
           {(showMe && showGif) && <div className="w-16 h-[104px] bg-transparent"></div>}
