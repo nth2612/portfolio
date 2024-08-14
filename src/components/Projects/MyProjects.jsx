@@ -37,11 +37,11 @@ const listProjects = [
   },
   {
     id: 4,
-    namePrj: "Todo app",
-    description: "Learn typescript through building a todolist website",
+    namePrj: "Todo list",
+    description: "Learn typescript, redux-toolkit through building a todolist website",
     imgSrc: todo,
-    linkGit: 'https://github.com/nth2612/todo-app',
-    linkWeb: 'https://todo-app-pied-beta.vercel.app'
+    linkGit: 'https://github.com/nth2612/Todo-list-with-redux',
+    linkWeb: 'https://todo-list-with-redux-six.vercel.app'
   },
   {
     id: 5,
